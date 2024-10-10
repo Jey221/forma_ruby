@@ -1,0 +1,11 @@
+<% content_for :title, "New post" %>
+
+<h1>New post</h1>
+
+<%= render "form", submit_text: "Ajouter un post", post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "Back to posts", user_posts_path(@post.user, @post) %>
+</div>

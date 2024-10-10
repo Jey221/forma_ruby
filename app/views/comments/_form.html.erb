@@ -1,0 +1,12 @@
+<%= form_with(model: [current_user, @post, @comment], local: true) do |form| %>
+
+  <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body %>
+  </div>
+
+
+  <div>
+    <%= form.submit "Update comment" %>
+  </div>
+<% end %>
